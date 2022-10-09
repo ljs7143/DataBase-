@@ -1,3 +1,5 @@
+import javax.sound.sampled.SourceDataLine;
+
 public class User{
     private String UID;
     public String User_ID;
@@ -11,17 +13,23 @@ public class User{
     //maybe it should be abstract class 
     //then implements on  Posting table
 
-
-
- 
+    public User(String UID, String User_ID, String password, String Email_Address){
+        this.UID = UID;
+        this.User_ID = User_ID;
+        this.password = password;
+        this.Email_Address = Email_Address;
+    }
+    
     private boolean Login(){
         return true;
     }
 
     private boolean SignUp(){
-        return ture;
-        
+        return true;
     }
+
+
+   
 
     // public WritePosts(){
     //     //write codes later what should I implement.
@@ -35,10 +43,5 @@ public class User{
 
 
     // }
-
-
-
-
-
 
 }
